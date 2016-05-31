@@ -54,10 +54,14 @@ ObjectCImitateSQL supports multiple methods for installing the library in a proj
 
 ///<singleTable>: base keys to get Distinct list: implement: Select Distinct a,b,c  From TableArray Where key1 = value1 and key2 = value2
 -(NSArray *)selectDistinctKeyArray:(NSArray *)dArray table:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
-```
 
 ##1.2
 兼容:value包含 NSNumber/NSDictionary/ 类似@(2), 就算是 数字类型也可以进行 where条件的比对
+
+
+```
+
+
 
 ## License
 
