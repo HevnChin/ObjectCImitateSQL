@@ -43,7 +43,6 @@ ObjectCImitateSQL supports multiple methods for installing the library in a proj
 ```
 
 ##1.1
-
 ```objective-c
 ///<singleTable>: fetch all dataList: implement: Select * From TableArray Where key1 = value1 and key2 = value2 and ...
 -(NSArray* )selectListFromTable:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
@@ -57,9 +56,8 @@ ObjectCImitateSQL supports multiple methods for installing the library in a proj
 ```
 
 ##1.2
-
 ```objective-c
-兼容:value包含 NSNumber/NSDictionary/ 类似@(2), 就算是 数字类型也可以进行 where条件的比对
+///兼容:value包含 NSNumber/NSDictionary/ 类似@(2), 就算是 数字类型也可以进行 where条件的比对
 ```
 
 
