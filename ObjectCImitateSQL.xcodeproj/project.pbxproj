@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3707FAB31CFD572C0083E20E /* Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3707FAB21CFD572C0083E20E /* Custom.m */; };
+		37A7476A1CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A747671CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.m */; };
+		37A7476B1CFD645E003B397A /* ObjectCSQLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A747691CFD645E003B397A /* ObjectCSQLManager.m */; };
 		37C68C721CFC56BE00E2FDA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C68C711CFC56BE00E2FDA9 /* UIKit.framework */; };
 		37C68C741CFC56CA00E2FDA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C68C731CFC56CA00E2FDA9 /* Foundation.framework */; };
 		37FB4DB31CFC54CB001D464C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FB4DB21CFC54CB001D464C /* main.m */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3707FAB11CFD572C0083E20E /* Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom.h; sourceTree = "<group>"; };
+		3707FAB21CFD572C0083E20E /* Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Custom.m; sourceTree = "<group>"; };
+		37A747661CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WangSF_NSArrayCustomExtends.h"; sourceTree = "<group>"; };
+		37A747671CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WangSF_NSArrayCustomExtends.m"; sourceTree = "<group>"; };
+		37A747681CFD645E003B397A /* ObjectCSQLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCSQLManager.h; sourceTree = "<group>"; };
+		37A747691CFD645E003B397A /* ObjectCSQLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectCSQLManager.m; sourceTree = "<group>"; };
 		37C68C701CFC562000E2FDA9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = resource/PrefixHeader.pch; sourceTree = "<group>"; };
 		37C68C711CFC56BE00E2FDA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37C68C731CFC56CA00E2FDA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +55,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3707FAB01CFD571B0083E20E /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				3707FAB11CFD572C0083E20E /* Custom.h */,
+				3707FAB21CFD572C0083E20E /* Custom.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		37A747651CFD645E003B397A /* ObjectCSQLManager */ = {
+			isa = PBXGroup;
+			children = (
+				37A747661CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.h */,
+				37A747671CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.m */,
+				37A747681CFD645E003B397A /* ObjectCSQLManager.h */,
+				37A747691CFD645E003B397A /* ObjectCSQLManager.m */,
+			);
+			path = ObjectCSQLManager;
+			sourceTree = "<group>";
+		};
 		37C68C751CFC56DC00E2FDA9 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +89,15 @@
 				37C68C711CFC56BE00E2FDA9 /* UIKit.framework */,
 			);
 			path = framework;
+			sourceTree = "<group>";
+		};
+		37C68C781CFD239B00E2FDA9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				37A747651CFD645E003B397A /* ObjectCSQLManager */,
+				3707FAB01CFD571B0083E20E /* custom */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		37FB4DA51CFC54CB001D464C = {
@@ -81,6 +119,7 @@
 		37FB4DB01CFC54CB001D464C /* ObjectCImitateSQL */ = {
 			isa = PBXGroup;
 			children = (
+				37C68C781CFD239B00E2FDA9 /* Class */,
 				37FB4DB41CFC54CB001D464C /* AppDelegate.h */,
 				37FB4DB51CFC54CB001D464C /* AppDelegate.m */,
 				37FB4DB71CFC54CB001D464C /* ViewController.h */,
@@ -177,7 +216,10 @@
 			files = (
 				37FB4DB91CFC54CB001D464C /* ViewController.m in Sources */,
 				37FB4DB61CFC54CB001D464C /* AppDelegate.m in Sources */,
+				37A7476A1CFD645E003B397A /* NSObject+WangSF_NSArrayCustomExtends.m in Sources */,
 				37FB4DB31CFC54CB001D464C /* main.m in Sources */,
+				3707FAB31CFD572C0083E20E /* Custom.m in Sources */,
+				37A7476B1CFD645E003B397A /* ObjectCSQLManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/duoduo/resource/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectCImitateSQL/resource/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectCImitateSQL/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -306,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/duoduo/resource/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectCImitateSQL/resource/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectCImitateSQL/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,6 +9,5 @@
 #ifndef ObjectCImitateSQL_pch
 #define ObjectCImitateSQL_pch
 
-#import <UIKite>
 
 #endif
