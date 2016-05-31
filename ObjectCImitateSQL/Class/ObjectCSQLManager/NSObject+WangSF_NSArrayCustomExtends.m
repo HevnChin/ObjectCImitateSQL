@@ -10,6 +10,26 @@
 //#import <objc/runtime.h>
 
 @implementation NSObject (WangSF_NSArrayCustomExtends)
+#pragma mark -
+#pragma mark -Json
+NSString * JSONValueFromObj(id obj){
+    NSString *jsonString = @"";
+    if(nil == obj){
+        return jsonString;
+    }
+    
+    if([obj isKindOfClass:[NSDictionary class]]){
+        NSError *parseError = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:&parseError];
+        if(nil == jsonData){
+            return jsonString;
+        }
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }else{
+         jsonString = [NSString stringWithFormat:@"%@",obj];
+    }
+     return jsonString;
+}
 
 #pragma mark -
 #pragma mark - CustomValueForKey

@@ -18,6 +18,10 @@
 @interface NSObject (WangSF_NSArrayCustomExtends)
 
 #pragma mark -
+#pragma mark -Json
+NSString * JSONValueFromObj(id obj);
+
+#pragma mark -
 #pragma mark - CustomValueForKey
 
 ///Get Model's StringOfValue For Key

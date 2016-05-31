@@ -14,5 +14,5 @@
 @property (nonatomic, assign) NSInteger dataInt;
 @property (nonatomic, copy) NSString *dataOpen;
 @property (nonatomic, copy) NSString *dataFrom;
-
+@property (nonatomic, strong) NSDictionary *dataInfo;
 @end

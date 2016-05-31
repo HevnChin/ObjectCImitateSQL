@@ -34,7 +34,9 @@ static ObjectCSQLManager *_sharedInstance;
     }
     //All has The Key
     for (id data in tableArray) {
-        if([[data valueStringForProperty:key] isEqualToString:value]){
+        NSString *JRValue = JSONValueFromObj(value);
+        NSString *JLValue = JSONValueFromObj([data valueStringForProperty:key]);
+        if([JLValue isEqualToString:JRValue]){
             [retArray addObject:data];
         }
     }
@@ -122,8 +124,9 @@ static ObjectCSQLManager *_sharedInstance;
         for (NSInteger index = 0;index<count;index++) {
             NSString *key = keys[index];
             NSString *value = values[index];
-            
-            if([[data valueStringForProperty:key] isEqualToString:value]){
+            NSString *JRValue = JSONValueFromObj(value);
+            NSString *JLValue = JSONValueFromObj([data valueStringForProperty:key]);
+            if([JLValue isEqualToString:JRValue]){
                 isEqual++;
             }
         }
