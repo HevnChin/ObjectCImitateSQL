@@ -33,10 +33,19 @@
 -(NSArray *)selectDistinctFromTable:(NSArray *)tableArray key:(NSString *)key value:(NSString *)value;
 
 
-///[singleTable]: 查出所有列表: implement: Select key1 key2 From TableArray Where key = value
+///[singleTable]: base key to get list: implement: Select key1 key2 From TableArray Where key = value
 -(NSArray *)selectKeyArray:(NSArray *)dArray table:(NSArray *)tableArray key:(NSString *)key value:(NSString *)value;
-///[singleTable]: 查出所有去重列表: implement: Select Distinct a,b,c  From TableArray Where key = value
+///[singleTable]: base keys to get list: implement: Select key1 key2 From TableArray Where key1 = value1 and key2 = value2 and ...
+-(NSArray* )selectKeyArray:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
+///[singleTable]: base key to get Distinct list: implement: Select Distinct a,b,c  From TableArray Where key = value
 -(NSArray *)selectDistinctKeyArray:(NSArray *)dArray table:(NSArray *)tableArray key:(NSString *)key value:(NSString *)value;
 
-
+#pragma mark -
+#pragma mark - Mutable
+///[singleTable]: fetch all dataList: implement: Select * From TableArray Where key1 = value1 and key2 = value2 and ...
+-(NSArray* )selectListFromTable:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
+///[singleTable]: base keys to get list: implement: Select a,b,c  From TableArray Where key1 = value1 and key2 = value2
+-(NSArray *)selectKeyArray:(NSArray *)dArray table:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
+///[singleTable]: base keys to get Distinct list: implement: Select Distinct a,b,c  From TableArray Where key1 = value1 and key2 = value2
+-(NSArray *)selectDistinctKeyArray:(NSArray *)dArray table:(NSArray *)tableArray keys:(NSArray *)keys values:(NSArray *)values;
 @end
