@@ -57,7 +57,7 @@ ObjectCImitateSQL supports multiple methods for installing the library in a proj
 
 ##1.2
 ```objective-c
-///兼容:value包含 NSNumber/NSDictionary/ 类似@(2), 就算是 数字类型也可以进行 where条件的比对
+///兼容:value包含 NSNumber/NSDictionary/NSArray/ 类似@(2), 就算是 数字类型也可以进行 where条件的比对
 ```
 
 

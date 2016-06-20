@@ -18,7 +18,7 @@ NSString * JSONValueFromObj(id obj){
         return jsonString;
     }
     
-    if([obj isKindOfClass:[NSDictionary class]]){
+    if([obj isKindOfClass:[NSDictionary class]] || [obj isKindOfClass:[NSArray class]]){
         NSError *parseError = nil;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:&parseError];
         if(nil == jsonData){
