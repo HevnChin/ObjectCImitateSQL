@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   
   s.homepage         = "https://github.com/WSFeng/ObjectCImitateSQL"  
   s.license          = 'MIT'  
-  s.author           = { “Great Sage” => “iwangshengfeng@163.com" }  
+  s.author           = “Great Sage : iwangshengfeng@163.com"
   s.source           = { :git => "https://github.com/WSFeng/ObjectCImitateSQL.git", :tag => s.version.to_s }  
   
   s.platform     = :ios, ‘7.0’  
