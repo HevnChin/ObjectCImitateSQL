@@ -2,9 +2,8 @@ Pod::Spec.new do |s|
   s.name             = "ObjectCImitateSQL"  
   s.version          = "1.0.0"  
   s.summary          = “Use SQL type Code to manage modesOfArray”  
-  s.description      = <<-DESC  
-                       ObjectC simulation functionality to SQL data to facilitate front-end query data.  
-                       DESC  
+  s.description      = “ObjectC simulation functionality to SQL data to facilitate front-end query data. “ 
+  
   s.homepage         = "https://github.com/WSFeng/ObjectCImitateSQL"  
   s.license          = 'MIT'  
   s.author           = { “Great Sage” => “iwangshengfeng@163.com" }  
